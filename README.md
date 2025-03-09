@@ -11,7 +11,7 @@ Petre-Soldan Adela ($331$) <br/>
 <br/>
 <br/>
 
-### Tema Aleasa: <br/>
+### Tema Aleasa: Humor and Jokes <br/>
 
 <br/>
 <br/>

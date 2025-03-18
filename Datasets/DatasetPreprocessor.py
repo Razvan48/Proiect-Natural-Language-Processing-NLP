@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 
 
@@ -100,5 +101,17 @@ def preprocess_dadjokes(input_path, output_path):
 
 # preprocess_dadjokes('Original-Datasets/dadjokes/train.csv', 'Preprocessed-Datasets/dadjokes/train.csv')
 # preprocess_dadjokes('Original-Datasets/dadjokes/test.csv', 'Preprocessed-Datasets/dadjokes/test.csv')
+
+
+def break_big_jester_file(input_directory, file_name, output_directory, batch_size):
+    df = pd.read_csv(input_directory + '/' + file_name + '.csv')
+
+    batches = np.array_split(df, batch_size)
+
+    for idx, batch in enumerate(batches):
+        batch.to_csv(output_directory + '/' + file_name + '_' + str(idx) + '.csv', index=False)
+
+
+# break_big_jester_file('Preprocessed-Datasets/jester', 'jester', 'Preprocessed-Datasets/jester', 18)
 
 

@@ -1,0 +1,14 @@
+Dataset-urile preprocesate au urmatorul format:
+
+ID | Title | Category | Body | Rating
+
+Se poate ca unele coloane (ID, Title, Category, Rating) sa nu fie mereu nevide.
+Body ar trebui sa fie mereu nevid.
+
+
+
+
+
+
+
+

@@ -72,6 +72,7 @@ def preprocess_jester(input_path, ratings_path, output_path):
     df_ratings = pd.read_csv(ratings_path)
     df_ratings = df_ratings.drop(columns=['userId'])
     df_ratings = df_ratings.rename(columns={'jokeId': 'ID', 'rating': 'Rating'})
+    df_ratings = df_ratings.groupby('ID', as_index=False)['Rating'].mean()
 
     df = pd.merge(df, df_ratings, on='ID', how='left')
 

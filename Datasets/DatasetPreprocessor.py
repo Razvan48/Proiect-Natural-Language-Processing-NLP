@@ -16,7 +16,7 @@ def preprocess_shortjokes(input_path, output_path):
     df.to_csv(output_path, index=False) # index=False nu adauga index la randuri
 
 
-# preprocess_shortjokes('Original-Datasets/shortjokes/shortjokes.csv', 'Preprocessed-Datasets/shortjokes/shortjokes.csv')
+# preprocess_shortjokes('Original-Datasets/Positive-Examples/shortjokes/shortjokes.csv', 'Preprocessed-Datasets/Positive-Examples/shortjokes/shortjokes.csv')
 
 
 def preprocess_reddit_jokes(input_path, output_path):
@@ -30,7 +30,7 @@ def preprocess_reddit_jokes(input_path, output_path):
     df.to_csv(output_path, index=False)
 
 
-# preprocess_reddit_jokes('Original-Datasets/joke-dataset/reddit_jokes.json', 'Preprocessed-Datasets/joke-dataset/reddit_jokes.csv')
+# preprocess_reddit_jokes('Original-Datasets/Positive-Examples/joke-dataset/reddit_jokes.json', 'Preprocessed-Datasets/Positive-Examples/joke-dataset/reddit_jokes.csv')
 
 
 def preprocess_stupidstuff(input_path, output_path):
@@ -44,7 +44,7 @@ def preprocess_stupidstuff(input_path, output_path):
     df.to_csv(output_path, index=False)
 
 
-# preprocess_stupidstuff('Original-Datasets/joke-dataset/stupidstuff.json', 'Preprocessed-Datasets/joke-dataset/stupidstuff.csv')
+# preprocess_stupidstuff('Original-Datasets/Positive-Examples/joke-dataset/stupidstuff.json', 'Preprocessed-Datasets/Positive-Examples/joke-dataset/stupidstuff.csv')
 
 
 def preprocess_wocka(input_path, output_path):
@@ -58,7 +58,7 @@ def preprocess_wocka(input_path, output_path):
     df.to_csv(output_path, index=False)
 
 
-# preprocess_wocka('Original-Datasets/joke-dataset/wocka.json', 'Preprocessed-Datasets/joke-dataset/wocka.csv')
+# preprocess_wocka('Original-Datasets/Positive-Examples/joke-dataset/wocka.json', 'Preprocessed-Datasets/Positive-Examples/joke-dataset/wocka.csv')
 
 
 def preprocess_jester(input_path, ratings_path, output_path):
@@ -81,7 +81,7 @@ def preprocess_jester(input_path, ratings_path, output_path):
     df.to_csv(output_path, index=False)
 
 
-# preprocess_jester('Original-Datasets/jester/jester_items.csv', 'Original-Datasets/jester/jester_ratings.csv', 'Preprocessed-Datasets/jester/jester.csv')
+# preprocess_jester('Original-Datasets/Positive-Examples/jester/jester_items.csv', 'Original-Datasets/Positive-Examples/jester/jester_ratings.csv', 'Preprocessed-Datasets/Positive-Examples/jester/jester.csv')
 
 
 def preprocess_dadjokes(input_path, output_path):
@@ -100,8 +100,8 @@ def preprocess_dadjokes(input_path, output_path):
     df.to_csv(output_path, index=False)
 
 
-# preprocess_dadjokes('Original-Datasets/dadjokes/train.csv', 'Preprocessed-Datasets/dadjokes/train.csv')
-# preprocess_dadjokes('Original-Datasets/dadjokes/test.csv', 'Preprocessed-Datasets/dadjokes/test.csv')
+# preprocess_dadjokes('Original-Datasets/Positive-Examples/dadjokes/train.csv', 'Preprocessed-Datasets/Positive-Examples/dadjokes/train.csv')
+# preprocess_dadjokes('Original-Datasets/Positive-Examples/dadjokes/test.csv', 'Preprocessed-Datasets/Positive-Examples/dadjokes/test.csv')
 
 
 def break_big_jester_file(input_directory, file_name, output_directory, batch_size):
@@ -113,6 +113,25 @@ def break_big_jester_file(input_directory, file_name, output_directory, batch_si
         batch.to_csv(output_directory + '/' + file_name + '_' + str(idx) + '.csv', index=False)
 
 
-# break_big_jester_file('Preprocessed-Datasets/jester', 'jester', 'Preprocessed-Datasets/jester', 18)
+# break_big_jester_file('Preprocessed-Datasets/Positive-Examples/jester', 'jester', 'Preprocessed-Datasets/Positive-Examples/jester', 18)
+
+
+def preprocess_news_category_dataset(input_path, output_path):
+    df = pd.read_json(input_path, lines=True)
+
+    df = df.rename(columns={'headline': 'Title', 'category': 'Category', 'short_description': 'Body'})
+    df = df.drop(columns=['link', 'authors', 'date'])
+    df['ID'] = pd.NA
+    df['Rating'] = pd.NA
+
+    df = df[['ID', 'Title', 'Category', 'Body', 'Rating']]
+
+    df.to_csv(output_path, index=False)
+
+
+# preprocess_news_category_dataset('Original-Datasets/Negative-Examples/News_Category_Dataset_v3/News_Category_Dataset_v3.json', 'Preprocessed-Datasets/Negative-Examples/News_Category_Dataset_v3/News_Category_Dataset_v3.csv')
+
+
+
 
 

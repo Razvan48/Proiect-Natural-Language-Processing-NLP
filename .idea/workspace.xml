@@ -4,24 +4,22 @@
     <list default="true" id="5d71b4f1-c168-4659-8ee2-1f281634be18" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Datasets/DatasetPreprocessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/DatasetPreprocessor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_0.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_11.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_12.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_13.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_14.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_15.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_16.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_17.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_7.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_8.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester_9.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Original-Datasets/dadjokes/test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Original-Datasets/dadjokes/train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Original-Datasets/jester/jester_items.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Original-Datasets/jester/jester_ratings.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Original-Datasets/joke-dataset/reddit_jokes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Original-Datasets/joke-dataset/stupidstuff.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Original-Datasets/joke-dataset/wocka.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Original-Datasets/shortjokes/shortjokes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/dadjokes/test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/dadjokes/train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/jester/jester.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/joke-dataset/reddit_jokes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/joke-dataset/stupidstuff.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/joke-dataset/wocka.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Preprocessed-Datasets/shortjokes/shortjokes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Source-Links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/Source-Links.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +37,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/GitHubDesktop/Proiect-Natural-Language-Processing-NLP&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/razvan/Desktop/proiect-nlp/Proiect-Natural-Language-Processing-NLP"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

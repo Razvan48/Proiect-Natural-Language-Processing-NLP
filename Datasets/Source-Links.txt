@@ -1,3 +1,5 @@
+Exemple pozitive:
+
 https://www.kaggle.com/datasets/abhinavmoudgil95/short-jokes
 
 https://www.kaggle.com/datasets/vikashrajluhaniwal/jester-17m-jokes-ratings-dataset
@@ -12,6 +14,26 @@ https://github.com/taivop/joke-dataset
 TODO:
 
 https://github.com/orionw/rJokesData
+
+
+
+
+
+
+
+
+
+
+Exemple negative:
+
+https://www.kaggle.com/datasets/rmisra/news-category-dataset
+
+
+
+
+
+
+
 
 
 
